@@ -36,9 +36,10 @@ def Cash():
         print(x)
     final = [int(i) for i in list3]
     print(message2, sum(final))
-    is_that_it = str(input("Anything Else? (Yes/No)")).title().strip()
-    if is_that_it == "Yes":
-        return Cash()
-    else:
-        return Cash()
+    is_that_it = str(input("\nAnything Else? (Yes/No)")).title().strip()
+    for t in range(1):
+        if is_that_it == "Yes":
+            return Cash()
+        else:
+            return False
 Cash()
