@@ -6,19 +6,24 @@ def Cash():
     class Cashier():
         """Welcome, How may I help you?"""
 
-        def __init__(self, item, price, pls):
+        def __init__(self, item, price, amt):
             """"Declaring item and its price."""
             self.item = item
             self.price = price
-            self.pls = pls
+            self.amt = amt
 
         def buy(self):
             """"Buying an item"""
             print("\nBuying " + self.item.title())
             print("Price: " + "RP " + str(self.price))
+            for l in range(1):
+                if self.price != self.price:
+                    break
+                else:
+                    continue
             list1.append(self.item)
             list2.append(self.price)
-            fin = self.price * self.pls
+            fin = self.price * self.amt
             print("Total Price: " + "RP " + str(fin))
             list3.append(fin)
                     #sfin0 = str(fin0)
