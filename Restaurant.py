@@ -77,20 +77,23 @@ def titlescreen():
         if tables == 0:
             print("Thank you for coming!")
             return False
-        elif tables <=2:
+        elif tables >=2:
             print("==============================")
             print("          Table of 2          ")
             print("==============================")
 
-        elif tables <=3:
+        elif tables >=3:
             print("==============================")
             print("          Table of 4          ")
             print("==============================")
-        elif tables <=6:
+        elif tables >=6:
             print("==============================")
             print("          Table of 8          ")
             print("==============================")
-
+        if tables == 1:
+            print("Serving", tables, "person")
+        if tables > 1:
+            print("Serving", tables, "people")
         print("Serving", tables, "people")
         print("\n============================")
         print("            Menu             ")
